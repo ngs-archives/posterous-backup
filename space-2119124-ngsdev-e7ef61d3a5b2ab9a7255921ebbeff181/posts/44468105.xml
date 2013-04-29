@@ -1,0 +1,84 @@
+<item>
+	<title>Converting VMWare .vmdk to VirtualBox .vdi</title>
+	<link>http://blog.ngsdev.org/converting-vmware-vmdk-to-virtualbox-vdi</link>
+	<pubDate>Mon Feb 28 10:04:00 -0800 2011</pubDate>
+	
+	<dc:creator><![CDATA[Atsushi Nagase]]></dc:creator>
+	
+	
+		<category domain="tag" nicename="centos"><![CDATA[centos]]></category>
+	
+		<category domain="tag" nicename="macosx"><![CDATA[macosx]]></category>
+	
+		<category domain="tag" nicename="virtualbox"><![CDATA[virtualbox]]></category>
+	
+		<category domain="tag" nicename="vm"><![CDATA[vm]]></category>
+	
+		<category domain="tag" nicename="vmware"><![CDATA[vmware]]></category>
+	
+
+	<category><![CDATA[Uncategorized]]></category>
+
+	<category domain="category" nicename="uncategorized"><![CDATA[Uncategorized]]></category>
+
+  <guid isPermaLink="false">http://blog.ngsdev.org/converting-vmware-vmdk-to-virtualbox-vdi</guid>
+	<description></description>
+	<content:encoded><![CDATA[<p>VMWare で作成した仮想端末を VirtualBox に移行するのに、ハマったのでメモです。</p>
+
+<ol>
+<li><em>Virtual Machine Library</em> から VM を選択、コンテキストメニューから <em>Settings</em> を選択、もしくは <code>CMD+E</code> で設定画面を表示</li>
+<li><em>HardDisks</em> を選択</li>
+<li><em>Split into 2 GB Files</em> のチェックを外し、<em>Apply</em> ボタンをクリック</li>
+<li><em>Virtual Machine Library</em> から VM を選択、コンテキストメニューから <em>Show In Finder</em> を選択</li>
+<li><em>Q.app</em> をダウンロード + インストール。<a href="http://www.kju-app.org/">Q &ndash; [kju:]</a></li>
+<li><p><em>Terminal.app</em> などを使って cli で、以下のコマンドを実行</p>
+
+<div class="CodeRay">
+  <div class="code"><pre>$ cd ~/Documents/Virtual\ Machines
+ $ /Applications/Q.app/Contents/MacOS/qemu-img convert $VMMACHINE$.vmwarevm/$VMDISK$.vmdk raw-file.bin
+ $ /Applications/VirtualBox.app/Contents/MacOS/VBoxManage convertdd raw-file.bin $VMMACHINE$.vdi
+ $ rm raw-file.bin</pre></div>
+</div>
+</li>
+<li><p><em>.vdi</em> ファイルは、自分の管理しやすい場所に移動します。</p></li>
+<li><em>VirtualBox.app</em> を起動。</li>
+<li>ツールバーから、<em>New</em> ボタンをクリック。ウィザードにしたがって、Name / OS / Version / Memory を然るべき値に設定</li>
+<li><em>Virtual Hard Disk</em> の画面まできたら <em>Book Hard Disk</em> はチェック、<em>Use existing hard disk</em> を選択し、プルダウン右にある、参照アイコンをクリックして、<em>.vdi</em> ファイルを選択。ウィザードを完了させます。</li>
+<li><p>cli から、以下のコマンドを実行します。</p>
+
+<div class="CodeRay">
+  <div class="code"><pre>$ /Applications/VirtualBox.app/Contents/MacOS/VBoxManage modifyvdi $VMMACHINE$.vdi compact</pre></div>
+</div>
+</li>
+<li><p><em>VirtualBox.app</em> の <em>VirtualBox Manager</em> から、VM を選択し、コンテキストメニューから、または<code>CMD+S</code> で <em>Settings</em> を開き、<em>Storage</em> に移動。</p></li>
+<li><em>SATA Controller</em> の下に、<em>.vdi</em> ファイルが入っているので、選択してコンテキストメニューから <em>Remove Attachment</em> を選択</li>
+<li><em>IDE Controller</em> を選択して、コンテキストメニューから <em>Add HardDisk</em> を選択、<em>Choose existing disk</em> を選択し、<em>.vdi</em> ファイルを選択。<em>OK</em> ボタンで設定完了</li>
+</ol>
+
+
+<p>以上で移行が完了しました。<br />
+Mac OS X 10.6.6 / VMWare Fusion 2.0.6 / VirtualBox 4.0.4、VM は CentOS-5.5 32 bit でした。</p>
+
+<p>参考にしたサイト</p>
+
+<ul>
+<li><a href="http://mariusvw.com/2009/08/29/converting-from-vmware-vmdk-to-virtualbox-vdi-on-mac-os-x/">Converting from VMware (vmdk) to VirtualBox (vdi) on Mac OS X</a></li>
+<li><a href="http://serverfault.com/questions/51965/mounting-opening-virtualbox-disk-image-vdi-on-linux-host">Mounting/opening virtualbox disk image (vdi) on linux host</a></li>
+</ul>]]></content:encoded>
+	<excerpt:encoded><![CDATA[VMWare で作成した仮想端末を VirtualBox に移行するのに、ハマったのでメモです。 Virtual Machine Library から VM を選択、コンテキストメニューから Settings を選択、もしくは CMD+E で設定画面...]]></excerpt:encoded>	
+
+	<wp:post_date>Mon Feb 28 10:04:00 -0800 2011</wp:post_date>
+	<wp:post_date_gmt>Mon Feb 28 10:04:00 -0800 2011</wp:post_date_gmt>
+	<wp:comment_status>open</wp:comment_status>
+	<wp:ping_status>open</wp:ping_status>
+	<wp:post_id>44468105</wp:post_id>
+	<wp:post_name>converting-vmware-vmdk-to-virtualbox-vdi</wp:post_name>
+	<wp:status>publish</wp:status>
+	<wp:post_parent>0</wp:post_parent>
+	<wp:menu_order>0</wp:menu_order>
+	<wp:post_type>post</wp:post_type>
+	<wp:post_password></wp:post_password>
+	<wp:is_sticky>0</wp:is_sticky>
+
+	
+</item>

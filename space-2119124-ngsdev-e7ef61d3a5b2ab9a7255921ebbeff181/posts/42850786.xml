@@ -1,0 +1,76 @@
+<item>
+	<title>Snippets の Gist.scrippet で Private gist したい。</title>
+	<link>http://blog.ngsdev.org/snippets-gist-bundle</link>
+	<pubDate>Sat Feb 12 14:20:00 -0800 2011</pubDate>
+	
+	<dc:creator><![CDATA[Atsushi Nagase]]></dc:creator>
+	
+	
+		<category domain="tag" nicename="gist"><![CDATA[gist]]></category>
+	
+		<category domain="tag" nicename="github"><![CDATA[github]]></category>
+	
+		<category domain="tag" nicename="ruby"><![CDATA[ruby]]></category>
+	
+		<category domain="tag" nicename="scrippets"><![CDATA[scrippets]]></category>
+	
+		<category domain="tag" nicename="snippets"><![CDATA[snippets]]></category>
+	
+
+	<category><![CDATA[Uncategorized]]></category>
+
+	<category domain="category" nicename="uncategorized"><![CDATA[Uncategorized]]></category>
+
+  <guid isPermaLink="false">http://blog.ngsdev.org/snippets-gist-bundle</guid>
+	<description></description>
+	<content:encoded><![CDATA[<p>深津さんの、エントリー "<a href="http://fladdict.net/blog/2011/02/ios-automatism.html"> iOS開発におけるパターンによるオートマティズム</a> " を読んで、早速私も Amazon で購入しました。</p>
+<p>まだ、第一章しか読んでいないので、感想は書けません。</p>
+<p>&nbsp;</p>
+<p>このエントリーで、<a href="http://www.snippetsapp.com/">Snippets</a> というソフトウェアに触れられていたので、ダウンロードして、試用しています。</p>
+<p>今まで、同じ様な用途に、Evernote を使っていたのですが、こちらは、テキストデータに特化しているので、検索が早く、シンタックスハイライトも付いているので、気に入りました。</p>
+<p>メニューバーから、<a href="http://www.snippetsapp.com/extras/">Scrippets</a> という、拡張機能が選択でき、そこから、各種スニペット共有サイトにポストできたり、Placeholder (テンプレートタグみたいなもの) を置換したりできます。画像のものは、バンドルされているものです。</p>
+<p>自作や、配布されているものを、新たに追加することも可能です。</p>
+<p><img src="http://farm6.static.flickr.com/5213/5439175703_001b3f1e0b_o.png" alt="" style="" /></p>
+<p>この中の、gist.github.com は、ブラウザでログインしている、いない、に関わらず、Anonymous として投稿されてしまいます。もちろん、Private gist も作れません。</p>
+<p>なので、恐らく、この bundle の作者の、ベルギーの Simon さんという方のリポジトリを fork して、修正しました。</p>
+<p><img src="http://farm5.static.flickr.com/4093/5439198095_e2db7161e3_o.png" alt="" /></p>
+<p>オリジナルは、Gist Create API :&nbsp;<a href="http://gist.github.com/api/v1/xml/new">http://gist.github.com/api/v1/xml/new</a> に、データを POST していたのですが、Private gist が仕様が公開されていないか、サポートされていないか、私が見過ごしたか、なので、<a href="https://github.com/defunkt/gist">gist のコマンドラインツール</a>&nbsp;のコードを参考に、Gist の投稿ページ :&nbsp;<a href="https://gist.github.com/gists">https://gist.github.com/gists</a> へポストする様に<a href="https://github.com/cimm/snippets-gist-scrippet/pull/1/files">変更しました</a>。</p>
+<p>一応、Pull request したので、もしかしたらバンドルされるかもしれませんが、もし、同じ悩みをかかえている人がいたら、私のリポジトリから、ソースを落として下さい。</p>
+<p><a href="https://github.com/ngs/snippets-gist-scrippet">https://github.com/ngs/snippets-gist-scrippet</a></p>
+<p>インストールするとき、" 既に、Gist.scrippet はインストールされてるよ " と怒られるので、その前に、一度 Snippets を終了して、Snippets.app/SharedSupport/Scrippets/Gist.scrippet を、リネームするなり、削除するなりして下さい。</p>
+<p>&nbsp;</p>
+<p>Scrippets は、JavaScript / CSS / HTML / Ruby で実装されているので、簡単に作成できます。</p>
+<p>API リファレンスが見当たらないので、仕様は手探りなのですが、Snippets.app/Contents/Resources/Scrippet.js に実装されているクラスのコードを読めば、JavaScript からアクセシブルな情報は、全て理解できます。</p>
+<p>パッケージの構造は、<a href="http://www.slideshare.net/snippets/introducing-scrippets">こちらのスライド </a>の 28 ページ目で紹介されています。</p>
+<p>また今度、自分オリジナルの Scrippet を作ってみたいと思います。</p>]]></content:encoded>
+	<excerpt:encoded><![CDATA[深津さんの、エントリー " iOS開発におけるパターンによるオートマティズ  " を読んで、早速私も Amazon で購入しました。 ま 、第一 しか読んでいないので、感想は書けません。 こ...]]></excerpt:encoded>	
+
+	<wp:post_date>Sat Feb 12 14:20:00 -0800 2011</wp:post_date>
+	<wp:post_date_gmt>Sat Feb 12 14:20:00 -0800 2011</wp:post_date_gmt>
+	<wp:comment_status>open</wp:comment_status>
+	<wp:ping_status>open</wp:ping_status>
+	<wp:post_id>42850786</wp:post_id>
+	<wp:post_name>snippets-gist-bundle</wp:post_name>
+	<wp:status>publish</wp:status>
+	<wp:post_parent>0</wp:post_parent>
+	<wp:menu_order>0</wp:menu_order>
+	<wp:post_type>post</wp:post_type>
+	<wp:post_password></wp:post_password>
+	<wp:is_sticky>0</wp:is_sticky>
+
+	
+		<wp:comment>
+			<wp:comment_id>7079352</wp:comment_id>
+			
+				<wp:comment_author><![CDATA[Cimm]]></wp:comment_author>
+				<wp:comment_author_url><![CDATA[]]></wp:comment_author_url>
+			
+			<wp:comment_date>Sat Feb 12 15:30:56 -0800 2011</wp:comment_date>
+			<wp:comment_date_gmt>Sat Feb 12 15:30:56 -0800 2011</wp:comment_date_gmt>
+			<wp:comment_content><![CDATA[I don't understand Japanese but I'm trying out your modifications right now. Looks awesome, thanks man!]]></wp:comment_content>
+			<wp:comment_approved>1</wp:comment_approved>
+			<wp:comment_type></wp:comment_type>
+			<wp:comment_parent>0</wp:comment_parent>
+		</wp:comment>
+	
+</item>

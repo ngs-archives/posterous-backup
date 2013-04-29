@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<link href='../../../exports.css' rel='stylesheet'>
+<link href='../../../exports.css' rel='stylesheet'>
+
+</head>
+<body>
+<div id='wrap'>
+<div id='header'>
+<h1>ngsdev.org</h1>
+<h2>This is an archived post
+This is an archived post
+</h2>
+</div>
+<div id='content'><div id='nav'>
+<a href="../../../posts/2011/02/converting-vmware-vmdk-to-virtualbox-vdi.html">Previous</a>
+&nbsp; 
+<a href="../../../index.html">Index</a>
+&nbsp; 
+<a href="../../../posts/2011/02/posterous-and-markdown-plugin-for-snippetsapp.html">Next</a>
+</div>
+<div class='post'>
+<div class='post_header'>
+<h3>node.js の mysql-native を使うと文字化けする</h3>
+<div class='post_info'>
+<span class='post_time'>February 22 2011, 11:24 AM</span>
+<span class='author'>&nbsp;by Atsushi Nagase</span>
+</div>
+</div>
+<div class='post_body'><p><a href="http://sequelizejs.com/">Sequelize</a> を使ってアプリを作っているのですが、どうしても、日本語がうまく入りません。</p>
+
+<p>Sequelize は、<a href="https://github.com/sidorares/nodejs-mysql-native">mysql-native</a> をドライバとして採用しており、こちらをそのまま、以下の様にシンプルに叩いてみても、やはり文字化けします。</p>
+
+<p><p><a href="https://gist.github.com/839181.js?file=test-mysql-native">https://gist.github.com/839181.js?file=test-mysql-native</a></p></p>
+
+<p>別のモジュールで、<a href="https://github.com/felixge/node-mysql">node-mysql</a> を使うとうまくいきます。</p>
+
+<p><p><a href="https://gist.github.com/839181.js?file=test-mysql">https://gist.github.com/839181.js?file=test-mysql</a></p></p>
+
+<p>参考までに DDL です。</p>
+
+<p><script src="https://gist.github.com/839181.js?file=schema.sql"></script></p>
+
+<p>Sequelize のコードに手を入れるべきか、mysql-native のコードに手を入れるべきか、もし、正しい解決方法をご存知の方がいらっしゃいましたらご教示ください。</p>
+
+<hr />
+
+<h2>2011-02-23 16:55:00 JST 追記</h2>
+
+<p><a href="https://github.com/sidorares/nodejs-mysql-native">mysql-native</a> の代わりに <a href="https://github.com/felixge/node-mysql">node-mysql</a> を使うパッチをコミットしました。 <a href="http://bit.ly/eth5WX">http://bit.ly/eth5WX</a>。</p></div>
+<div class='post_tags'>
+<h4>Tags</h4>
+<div class='post_tags_list'>charset, mysql, nodejs, problem</div>
+</div>
+<div class='post_responses'>
+<h4>8257 views and 1 response</h4>
+<ul class='post_responses list'>
+<li class='response clearfix'>
+<div class='response_header'>
+<div class='response_time'>Mar 12 2012,  7:49 PM</div>
+<div class='response_name'>Ethan responded:</div>
+</div>
+<div class='response_body'>very useful tips.<p>3Q~~  </p><p>i use to mysql-native to insert chinses character alway has ERROR,and change to mysql modull is sovled.</p></div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

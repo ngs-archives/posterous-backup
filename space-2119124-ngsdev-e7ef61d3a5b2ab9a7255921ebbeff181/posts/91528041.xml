@@ -1,0 +1,65 @@
+<item>
+	<title>しまなみ海道 と LiveCycling の SQLite</title>
+	<link>http://blog.ngsdev.org/livecycling-db-ruby</link>
+	<pubDate>Sun Jan 01 11:33:00 -0800 2012</pubDate>
+	
+	<dc:creator><![CDATA[Atsushi Nagase]]></dc:creator>
+	
+	
+		<category domain="tag" nicename="%E3%81%97%E3%81%BE%E3%81%AA%E3%81%BF%E6%B5%B7%E9%81%93"><![CDATA[しまなみ海道]]></category>
+	
+		<category domain="tag" nicename="cycling"><![CDATA[cycling]]></category>
+	
+		<category domain="tag" nicename="LiveCycling"><![CDATA[LiveCycling]]></category>
+	
+		<category domain="tag" nicename="ruby"><![CDATA[ruby]]></category>
+	
+		<category domain="tag" nicename="%E5%B0%BE%E9%81%93"><![CDATA[尾道]]></category>
+	
+
+	<category><![CDATA[Uncategorized]]></category>
+
+	<category domain="category" nicename="uncategorized"><![CDATA[Uncategorized]]></category>
+
+  <guid isPermaLink="false">http://blog.ngsdev.org/livecycling-db-ruby</guid>
+	<description></description>
+	<content:encoded><![CDATA[<p>あけましておめでとうございます。今年もよろしくお願いいたします。</p>
+<p>現在、母の田舎の尾道に帰っています。今回は輪行でロードバイクを持ってきました。</p>
+<p><a href="http://www.flickr.com/photos/atsnngs/6613758031/" title="Untitled by atsnngs, on Flickr"><img src="http://farm8.staticflickr.com/7152/6613758031_59ee09d61d.jpg" height="375" alt="" width="500" /></a></p>
+<p>2011/12/30 向島 - 今治 - 瀬戸田 というコースでしまなみ海道を渡ってきました。</p>
+<p>Strava にアップしている情報 ( 速度、位置、ケイデンス、心拍数 )は iPhone アプリの <a href="http://goo.gl/is1CY">LiveCycling</a> を使用しており、途中で電池が切れてスペアの iPhone に交換したので、記録が2つに分かれています。</p>
+<p><iframe scrolling="no" src="http://app.strava.com/runs/2968996/embed/13d42a6ddc4e3161a9060a85af0cc8a8c458398c" frameborder="0" height="405" width="500"></iframe> <iframe scrolling="no" src="http://app.strava.com/runs/2969000/embed/52b7b944474a468a161bf268f1367f886509064a" frameborder="0" height="405" width="500"></iframe></p>
+<p>後でメインの iPhone にスペア分をコピーするために、スクリプトを書いたので Gist に手順を残しておきました<br /> <a href="https://gist.github.com/1540055">Gist:1540055</a></p>
+<p>// LiveCycling に .tcx を読み込む機能があれば、こんなことする手間をかけなくて良かったのになー、と思います。</p>
+<script src="https://gist.github.com/1540055.js?file=README.mkdn"></script>
+<script src="https://gist.github.com/1540055.js?file=import.rb"></script>
+<p>とりあえず普段使いは引き続き <a href="http://goo.gl/is1CY">LiveCycling</a> ですが、長距離用に <a href="http://amzn.to/ukFTKs">Garmin edge 500</a> をポチりました。東京に帰る頃には手に入ると思います。wktk</p>
+<p>おそらくこれによって、次は .tcx から、もしくは Garmin Connect から SQLite へ読み込ませるスクリプトを書くことになる予感です。<a href="http://developer.garmin.com/">API も充実してるみたいで</a>楽しみです。</p>
+<p><iframe marginheight="0" scrolling="no" src="http://rcm-jp.amazon.co.jp/e/cm?lt1=_blank&amp;bc1=FFFFFF&amp;IS2=1&amp;bg1=FFFFFF&amp;fc1=000000&amp;lc1=0000FF&amp;t=atsushnagased-22&amp;o=9&amp;p=8&amp;l=as1&amp;m=amazon&amp;f=ifr&amp;ref=tf_til&amp;asins=B003JZEL8U" marginwidth="0" frameborder="0" height="240" width="120"></iframe> <iframe src="http://widgets.itunes.apple.com/appstore.html?wtype=0&amp;app_id=407471916&amp;country=jp&amp;partnerId=30&amp;affiliate_id=http%3A%2F%2Fclick.linksynergy.com%2Ffs-bin%2Fstat%3Fid%3DCzqa8CY9CFY%26offerid%3D94348%26type%3D3%26subid%3D0%26tmpid%3D2192%26RD_PARM1%3D" border="0&quot;" frameborder="0" height="300" width="250"></iframe></p>
+<p><a href="http://www.flickr.com/photos/atsnngs/6613762575/" title="Untitled by atsnngs, on Flickr"><img src="http://farm8.staticflickr.com/7011/6613762575_3a10c12657.jpg" height="500" alt="" width="375" /></a> <a href="http://www.flickr.com/photos/atsnngs/6613754547/" title="Untitled by atsnngs, on Flickr"><img src="http://farm8.staticflickr.com/7162/6613754547_7db8965dd6.jpg" height="500" alt="" width="375" /></a></p>
+<h4>Path x Foursquare x ifttt x Google Calendar</h4>
+<p>移動中、Path から写真とチェックインを <a href="http://twitter.com/ngs">Twitter</a> / <a href="http://fb.me/atsnngs">Facebook</a> /  <a href="http://foursquare.com/ngs">Foursquare</a> に対して続けてました。</p>
+<p>少し前から <a href="http://ifttt.com/">ifttt</a> で if <strong>Foursquare</strong> then <strong>Google Calendar</strong> というタスクを設定していたので、以下の様に細かくどこにいたか記録されていて、今後のスケジュール作成に活用できそうです。</p>
+<p><a href="http://www.flickr.com/photos/atsnngs/6613940287/" title="Screen Shot 2012-01-02 at 3.39.38 AM by atsnngs, on Flickr"><img src="http://farm8.staticflickr.com/7170/6613940287_ecd1889b41.jpg" height="500" alt="Screen Shot 2012-01-02 at 3.39.38 AM" width="429" /></a></p>
+<h4>その他反省点</h4>
+<ul>
+<li>通行料の料金箱が賽銭箱式で、50円玉がなく、少しずつ損してました。後で知りましたが サイクリングチケット なるものがあったそうです。小銭を探す手間も省けるし、良いですね。( 参考: <a href="http://www.go-shimanami.jp/rental/001.html">SHIMAP【サイクリング】料金表</a> )</li>
+<li>日が落ちると、街灯がなく、橋の入り口が分からなくなりました。(幸い迷子になりませんでしたが。。) 今度はゆとりを持って早朝に出発して、日が暮れないように帰ってきます。</li>
+</ul>]]></content:encoded>
+	<excerpt:encoded><![CDATA[あけましておめでとうございます。今年もよろしくお願いいたします。 現在、母の田舎の尾道に帰っています。今回は輪行でロードバイクを持ってきました。 2011/12/30 向島 - 今治 - 瀬...]]></excerpt:encoded>	
+
+	<wp:post_date>Sun Jan 01 11:33:00 -0800 2012</wp:post_date>
+	<wp:post_date_gmt>Sun Jan 01 11:33:00 -0800 2012</wp:post_date_gmt>
+	<wp:comment_status>open</wp:comment_status>
+	<wp:ping_status>open</wp:ping_status>
+	<wp:post_id>91528041</wp:post_id>
+	<wp:post_name>livecycling-db-ruby</wp:post_name>
+	<wp:status>publish</wp:status>
+	<wp:post_parent>0</wp:post_parent>
+	<wp:menu_order>0</wp:menu_order>
+	<wp:post_type>post</wp:post_type>
+	<wp:post_password></wp:post_password>
+	<wp:is_sticky>0</wp:is_sticky>
+
+	
+</item>

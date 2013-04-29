@@ -1,0 +1,53 @@
+<item>
+	<title>Three20 - extXMLRPC</title>
+	<link>http://blog.ngsdev.org/three20-extxmlrpc</link>
+	<pubDate>Sat Jan 29 11:19:00 -0800 2011</pubDate>
+	
+	<dc:creator><![CDATA[Atsushi Nagase]]></dc:creator>
+	
+	
+		<category domain="tag" nicename="github"><![CDATA[github]]></category>
+	
+		<category domain="tag" nicename="hatena"><![CDATA[hatena]]></category>
+	
+		<category domain="tag" nicename="ios"><![CDATA[ios]]></category>
+	
+		<category domain="tag" nicename="objective-c"><![CDATA[objective-c]]></category>
+	
+		<category domain="tag" nicename="three20"><![CDATA[three20]]></category>
+	
+		<category domain="tag" nicename="xmlrpc"><![CDATA[xmlrpc]]></category>
+	
+
+	<category><![CDATA[Uncategorized]]></category>
+
+	<category domain="category" nicename="uncategorized"><![CDATA[Uncategorized]]></category>
+
+  <guid isPermaLink="false">http://blog.ngsdev.org/three20-extxmlrpc</guid>
+	<description></description>
+	<content:encoded><![CDATA[<p>去年、<a href="http://littleapps.jp/pages/ibacklog">iBacklog</a>&nbsp;を開発したときに作った、<a href="http://three20.info/">Three20</a>&nbsp;の XML-RPC 拡張を、私の branch にコミットして、Pull request したままだったのですが、「&nbsp;<a href="http://three20.info/extensions">Extentions</a> ページを <a href="http://three20.info/">Three20.info</a> に作ったので、そちらに登録してくれ 」とのことで、Pull せずに Close されてしまったので、独立したリポジトリを作って、登録しました。</p>
+<p><span style="font-family: monospace; font-size: medium;"><a href="http://three20.info/extension/extXMLRPC">extXMLRPC | Extensions | Three20</a></span></p>
+<p>使い方は、上記のページの <em>Breakdown</em> に記載されていますが、去年の 10月に、Facebook の Jeff 氏に言われて、 ( YAPC Asia に参加中に片手間で )&nbsp;作ったサンプルも公開しているので、参考になればと思います。</p>
+<p><a href="https://github.com/ngs/Samples/tree/master/XMLRPCSample">ngs / Samples/tree/master/XMLRPCSample</a></p>
+<p>このサンプルは " <a href="http://developer.hatena.ne.jp/ja/documents/keyword/apis/association">はてなキーワード連想語API</a>&nbsp;" を使って、延々と関連ワードを辿ってゆくものです。</p>
+<p><div class='p_embed p_image_embed'>
+<a href="http://getfile5.posterous.com/getfile/files.posterous.com/temp-2011-01-29/ioDBefIqEmivIIlvkDoxCCEedEFkaCbndspqIeBvhGHAnGbuHItqxkgIGdbD/capture.jpg"><img alt="Capture" src="http://getfile5.posterous.com/getfile/files.posterous.com/temp-2011-01-29/ioDBefIqEmivIIlvkDoxCCEedEFkaCbndspqIeBvhGHAnGbuHItqxkgIGdbD/capture.jpg" /></a>
+</div>
+</p>]]></content:encoded>
+	<excerpt:encoded><![CDATA[去年、iBacklog を開発したときに作った、Three20 の XML-RPC 拡張を、私の branch にコミットして、Pull request したまま ったのですが、「 Extentions ページを Three20.info に作ったので、そちらに...]]></excerpt:encoded>	
+
+	<wp:post_date>Sat Jan 29 11:19:00 -0800 2011</wp:post_date>
+	<wp:post_date_gmt>Sat Jan 29 11:19:00 -0800 2011</wp:post_date_gmt>
+	<wp:comment_status>open</wp:comment_status>
+	<wp:ping_status>open</wp:ping_status>
+	<wp:post_id>41356717</wp:post_id>
+	<wp:post_name>three20-extxmlrpc</wp:post_name>
+	<wp:status>publish</wp:status>
+	<wp:post_parent>0</wp:post_parent>
+	<wp:menu_order>0</wp:menu_order>
+	<wp:post_type>post</wp:post_type>
+	<wp:post_password></wp:post_password>
+	<wp:is_sticky>0</wp:is_sticky>
+
+	
+</item>

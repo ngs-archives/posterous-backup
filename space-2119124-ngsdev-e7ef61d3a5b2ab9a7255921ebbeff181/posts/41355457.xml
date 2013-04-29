@@ -1,0 +1,59 @@
+<item>
+	<title>ホスティング環境を整理しました。</title>
+	<link>http://blog.ngsdev.org/41355457</link>
+	<pubDate>Sat Jan 29 09:33:00 -0800 2011</pubDate>
+	
+	<dc:creator><![CDATA[Atsushi Nagase]]></dc:creator>
+	
+	
+		<category domain="tag" nicename="blog"><![CDATA[blog]]></category>
+	
+		<category domain="tag" nicename="dreamhost"><![CDATA[dreamhost]]></category>
+	
+		<category domain="tag" nicename="facebook"><![CDATA[facebook]]></category>
+	
+		<category domain="tag" nicename="github"><![CDATA[github]]></category>
+	
+		<category domain="tag" nicename="hosting"><![CDATA[hosting]]></category>
+	
+		<category domain="tag" nicename="infrastructure"><![CDATA[infrastructure]]></category>
+	
+		<category domain="tag" nicename="littleapps"><![CDATA[littleapps]]></category>
+	
+		<category domain="tag" nicename="posterous"><![CDATA[posterous]]></category>
+	
+		<category domain="tag" nicename="subversion"><![CDATA[subversion]]></category>
+	
+
+	<category><![CDATA[Uncategorized]]></category>
+
+	<category domain="category" nicename="uncategorized"><![CDATA[Uncategorized]]></category>
+
+  <guid isPermaLink="false">http://blog.ngsdev.org/41355457</guid>
+	<description></description>
+	<content:encoded><![CDATA[<p>ブログや Wiki 、Subversion リポジトリ、友達のサイトなど、相乗りで 使えるネット の VPS に構築していましたが、バージョン管理を Git に移行したり、同じ Apache に、モジュールを共存させすぎたのが原因で、負荷が高かったので、メンテナンスが億劫になり、それぞれウェブサービスに移行しました。</p>
+<dl> <dt>個人/会社サイトホーム</dt> <dd><a href="http://pages.github.com/">GitHub Pages</a></dd> <dt>Wiki</dt> <dd>GitHub Wiki / gist にバックアップ、今後は gist に集約させます。 </dd><dt>個人ブログ</dt> <dd> 過去のものは <a href="http://dreamhost.com/">Dreamhost</a> で、<a href="http://blog1.ngsdev.org/">blog1.ngsdev.org</a> に移行。<br /> 今後は この <a href="http://posterous.com/">Posterous</a> に気が向いたら書いていきます。 </dd> <dt>バージョン管理</dt> <dd> Subversion は、一旦 Repository root を tarball にして、Dreamhost に。<br /> 終っていない / メンテしている案件は、gitsvn で、Git リポジトリに変換。それ以外は放置です。 </dd></dl>
+<p>これからは、Dreamhost にリモートリポジトリを作っていきます。容量無制限なので安心です。</p>
+<p>( ちなみに、iTunes や動画などの大きなデータのバックアップにも使っています。 )</p>
+<p>また、新たに<a href="http://littleapps.jp/">会社のプロダクトサイト</a>を開設しました。</p>
+<p>こちらも Posterous です。 <a href="http://littleapps.jp/">http://littleapps.jp/</a></p>
+<p>ソフトウェアのリリース / アップデート情報などを流していきます。</p>
+<p>それに連動する <a href="http://www.facebook.com/littleapps.jp">Facebook Page</a> も作成したので、よかったら Like ! ボタンをクリックして下さい。</p>
+<p>現時点では、メンバーが 25 人に満たないので、Custom Username を設定できていません。( 参考: <a href="http://www.facebook.com/help/?page=900">Facebook Help Center</a> )</p>]]></content:encoded>
+	<excerpt:encoded><![CDATA[ブログや Wiki 、Subversion リポジトリ、友達のサイトなど、相乗りで 使えるネット の VPS に構築していましたが、バージョン管理を Git に移行したり、同じ Apache に、モジュールを共存さ...]]></excerpt:encoded>	
+
+	<wp:post_date>Sat Jan 29 09:33:00 -0800 2011</wp:post_date>
+	<wp:post_date_gmt>Sat Jan 29 09:33:00 -0800 2011</wp:post_date_gmt>
+	<wp:comment_status>open</wp:comment_status>
+	<wp:ping_status>open</wp:ping_status>
+	<wp:post_id>41355457</wp:post_id>
+	<wp:post_name>41355457</wp:post_name>
+	<wp:status>publish</wp:status>
+	<wp:post_parent>0</wp:post_parent>
+	<wp:menu_order>0</wp:menu_order>
+	<wp:post_type>post</wp:post_type>
+	<wp:post_password></wp:post_password>
+	<wp:is_sticky>0</wp:is_sticky>
+
+	
+</item>

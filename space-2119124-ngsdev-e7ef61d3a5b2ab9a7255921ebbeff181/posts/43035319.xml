@@ -1,0 +1,81 @@
+<item>
+	<title>Posterous and Markdown plugin for @snippetsapp </title>
+	<link>http://blog.ngsdev.org/posterous-and-markdown-plugin-for-snippetsapp</link>
+	<pubDate>Mon Feb 14 08:00:00 -0800 2011</pubDate>
+	
+	<dc:creator><![CDATA[Atsushi Nagase]]></dc:creator>
+	
+	
+		<category domain="tag" nicename="github"><![CDATA[github]]></category>
+	
+		<category domain="tag" nicename="markdown"><![CDATA[markdown]]></category>
+	
+		<category domain="tag" nicename="posterous"><![CDATA[posterous]]></category>
+	
+		<category domain="tag" nicename="scrippets"><![CDATA[scrippets]]></category>
+	
+		<category domain="tag" nicename="snippets"><![CDATA[snippets]]></category>
+	
+
+	<category><![CDATA[Uncategorized]]></category>
+
+	<category domain="category" nicename="uncategorized"><![CDATA[Uncategorized]]></category>
+
+  <guid isPermaLink="false">http://blog.ngsdev.org/posterous-and-markdown-plugin-for-snippetsapp</guid>
+	<description></description>
+	<content:encoded><![CDATA[<p>I&rsquo;ve published 2 scrippets to GitHub.</p>
+
+<p>The first is <em><a href="https://github.com/ngs/snippets-posterous-scrippet">Posterous</a></em>. This enables posting entries from Snippets.</p>
+
+<p>We are able to write drafts in Snippets, and publish seamlessly.</p>
+
+<p>However, Text lines don&rsquo;t break automatically.  To solve this, use one of the following two options:</p>
+
+<ul>
+<li>Wrap with <code>&lt;markdown&gt;&lt;/markdown&gt;</code> and write content with markdown syntax</li>
+<li>or use HTML.</li>
+</ul>
+
+
+<p>When publishing private posts, links on the last screen may be broken because of Posterous API’s bug.</p>
+
+<p>I mentioned this issue to the Posterous support team, I hope they fix this soon.</p>
+
+<p>The second is <em><a href="https://github.com/ngs/snippets-markdown-scrippet">Preview Markdown</a></em>. This enables preview Markdown document.</p>
+
+<hr />
+
+<p>2つの scrippet を GitHub で公開しました。</p>
+
+<p>1つめは、<em><a href="https://github.com/ngs/snippets-posterous-scrippet">Posterous</a></em> です。 Snippets から Posterous にエントリーを投稿出来ます。</p>
+
+<p>下書きを Snippets で書いて、そのまま公開できます。</p>
+
+<p>自動的にされないので、<code>&lt;markdown&gt;&lt;/markdown&gt;</code> で本文を囲って Markdown 記法で書くか、HTML で書く必要があります。</p>
+
+<p>非公開記事を投稿した場合、Posterous の API のバグが原因で、最後の画面に出てくるリンクは、壊れています。</p>
+
+<p>Posterous サポートチームに問い合わせたので、早く治ればいいな、と思っています。</p>
+
+<p>2つめは、<em><a href="https://github.com/ngs/snippets-markdown-scrippet">Markdown をプレビュー</a></em> です。</p>
+
+<p>Markdown 文書をプレビューすることができます。</p>
+
+<p>P.S. 海外の人向けに、ぎこちない英語と、日本の人向けにぎごちない日本語で書いてみました。変なところがあったらご指摘下さい。</p>]]></content:encoded>
+	<excerpt:encoded><![CDATA[I’ve published 2 scrippets to GitHub. The first is Posterous. This enables posting entries from Snippets. We are able to write drafts in Snippets, and publish seamlessly. However, Text lines don’t break automatically. To solve this, use one of...]]></excerpt:encoded>	
+
+	<wp:post_date>Mon Feb 14 08:00:00 -0800 2011</wp:post_date>
+	<wp:post_date_gmt>Mon Feb 14 08:00:00 -0800 2011</wp:post_date_gmt>
+	<wp:comment_status>open</wp:comment_status>
+	<wp:ping_status>open</wp:ping_status>
+	<wp:post_id>43035319</wp:post_id>
+	<wp:post_name>posterous-and-markdown-plugin-for-snippetsapp</wp:post_name>
+	<wp:status>publish</wp:status>
+	<wp:post_parent>0</wp:post_parent>
+	<wp:menu_order>0</wp:menu_order>
+	<wp:post_type>post</wp:post_type>
+	<wp:post_password></wp:post_password>
+	<wp:is_sticky>0</wp:is_sticky>
+
+	
+</item>

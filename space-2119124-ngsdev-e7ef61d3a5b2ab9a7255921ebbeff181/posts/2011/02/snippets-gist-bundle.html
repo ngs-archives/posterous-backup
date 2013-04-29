@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<link href='../../../exports.css' rel='stylesheet'>
+<link href='../../../exports.css' rel='stylesheet'>
+
+</head>
+<body>
+<div id='wrap'>
+<div id='header'>
+<h1>ngsdev.org</h1>
+<h2>This is an archived post
+This is an archived post
+</h2>
+</div>
+<div id='content'><div id='nav'>
+<a href="../../../posts/2011/02/posterous-and-markdown-plugin-for-snippetsapp.html">Previous</a>
+&nbsp; 
+<a href="../../../index.html">Index</a>
+&nbsp; 
+<a href="../../../posts/2011/02/dbixclassstoragedbimysqlbackup.html">Next</a>
+</div>
+<div class='post'>
+<div class='post_header'>
+<h3>Snippets の Gist.scrippet で Private gist したい。</h3>
+<div class='post_info'>
+<span class='post_time'>February 12 2011,  2:20 PM</span>
+<span class='author'>&nbsp;by Atsushi Nagase</span>
+</div>
+</div>
+<div class='post_body'><p>深津さんの、エントリー "<a href="http://fladdict.net/blog/2011/02/ios-automatism.html"> iOS開発におけるパターンによるオートマティズム</a> " を読んで、早速私も Amazon で購入しました。</p>
+<p>まだ、第一章しか読んでいないので、感想は書けません。</p>
+<p>&nbsp;</p>
+<p>このエントリーで、<a href="http://www.snippetsapp.com/">Snippets</a> というソフトウェアに触れられていたので、ダウンロードして、試用しています。</p>
+<p>今まで、同じ様な用途に、Evernote を使っていたのですが、こちらは、テキストデータに特化しているので、検索が早く、シンタックスハイライトも付いているので、気に入りました。</p>
+<p>メニューバーから、<a href="http://www.snippetsapp.com/extras/">Scrippets</a> という、拡張機能が選択でき、そこから、各種スニペット共有サイトにポストできたり、Placeholder (テンプレートタグみたいなもの) を置換したりできます。画像のものは、バンドルされているものです。</p>
+<p>自作や、配布されているものを、新たに追加することも可能です。</p>
+<p><img src="http://farm6.static.flickr.com/5213/5439175703_001b3f1e0b_o.png" alt="" style="" /></p>
+<p>この中の、gist.github.com は、ブラウザでログインしている、いない、に関わらず、Anonymous として投稿されてしまいます。もちろん、Private gist も作れません。</p>
+<p>なので、恐らく、この bundle の作者の、ベルギーの Simon さんという方のリポジトリを fork して、修正しました。</p>
+<p><img src="http://farm5.static.flickr.com/4093/5439198095_e2db7161e3_o.png" alt="" /></p>
+<p>オリジナルは、Gist Create API :&nbsp;<a href="http://gist.github.com/api/v1/xml/new">http://gist.github.com/api/v1/xml/new</a> に、データを POST していたのですが、Private gist が仕様が公開されていないか、サポートされていないか、私が見過ごしたか、なので、<a href="https://github.com/defunkt/gist">gist のコマンドラインツール</a>&nbsp;のコードを参考に、Gist の投稿ページ :&nbsp;<a href="https://gist.github.com/gists">https://gist.github.com/gists</a> へポストする様に<a href="https://github.com/cimm/snippets-gist-scrippet/pull/1/files">変更しました</a>。</p>
+<p>一応、Pull request したので、もしかしたらバンドルされるかもしれませんが、もし、同じ悩みをかかえている人がいたら、私のリポジトリから、ソースを落として下さい。</p>
+<p><a href="https://github.com/ngs/snippets-gist-scrippet">https://github.com/ngs/snippets-gist-scrippet</a></p>
+<p>インストールするとき、" 既に、Gist.scrippet はインストールされてるよ " と怒られるので、その前に、一度 Snippets を終了して、Snippets.app/SharedSupport/Scrippets/Gist.scrippet を、リネームするなり、削除するなりして下さい。</p>
+<p>&nbsp;</p>
+<p>Scrippets は、JavaScript / CSS / HTML / Ruby で実装されているので、簡単に作成できます。</p>
+<p>API リファレンスが見当たらないので、仕様は手探りなのですが、Snippets.app/Contents/Resources/Scrippet.js に実装されているクラスのコードを読めば、JavaScript からアクセシブルな情報は、全て理解できます。</p>
+<p>パッケージの構造は、<a href="http://www.slideshare.net/snippets/introducing-scrippets">こちらのスライド </a>の 28 ページ目で紹介されています。</p>
+<p>また今度、自分オリジナルの Scrippet を作ってみたいと思います。</p></div>
+<div class='post_tags'>
+<h4>Tags</h4>
+<div class='post_tags_list'>gist, github, ruby, scrippets, snippets</div>
+</div>
+<div class='post_responses'>
+<h4>9577 views and 1 response</h4>
+<ul class='post_responses list'>
+<li class='response clearfix'>
+<div class='response_header'>
+<div class='response_time'>Feb 12 2011,  3:30 PM</div>
+<div class='response_name'>Cimm responded:</div>
+</div>
+<div class='response_body'>I don't understand Japanese but I'm trying out your modifications right now. Looks awesome, thanks man!</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>
